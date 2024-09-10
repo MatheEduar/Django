@@ -1,4 +1,4 @@
-# Estudos em Django: [Seu Nome]
+# Estudos em Django:
 
 ## Sobre este repositório
 Este repositório documenta minha jornada de aprendizado com o framework Django. Ele contém projetos práticos desenvolvidos durante o estudo de diversos cursos e tutoriais. Cada diretório representa um projeto específico, com código, documentação e anotações sobre o que aprendi em cada etapa.
@@ -12,6 +12,6 @@ Este repositório documenta minha jornada de aprendizado com o framework Django.
 * **Projetos:**
     * MyPage: Diretório responsável para aprendizado de conceitos iniciais do Framework Django.
 * **Cursos:**
-    * Lista dos cursos que estou utilizando para aprender Django
+    * Python Django - The Practical Guide
 * **Recursos:**
-    * Links para tutoriais, documentação oficial e outros recursos úteis
+    * 
