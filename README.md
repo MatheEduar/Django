@@ -13,5 +13,6 @@ Este repositório documenta minha jornada de aprendizado com o framework Django.
     * MyPage: Diretório responsável para aprendizado de conceitos iniciais do Framework Django.
 * **Cursos:**
     * Python Django - The Practical Guide
+    * Python Django - The Practical Guide
 * **Recursos:**
     
