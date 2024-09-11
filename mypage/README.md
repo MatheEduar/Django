@@ -82,3 +82,28 @@ Nesse exemplo o App challenges será um App para exemplo para esse repositório.
 A configuração do Projeto ficará assim:
 
 ![Screenshot da configuração do projeto após o comando acima](https://github.com/MatheEduar/Django/blob/main/assets/imgs/mypage/my-page-4.png)
+
+No arquivo `settings.py` no módulo `mypage`, é necessário declarar o aplicativo que foi criado em
+`INSTALLED_APPS`
+
+![Screenshot do INSTALLED_APPS após o passo acima.](https://github.com/MatheEduar/Django/blob/main/assets/imgs/mypage/my-page-4.png)
+
+## Arquivos do App
+
+No App há vários arquivos, um deles é o `__init__.py` que também irá iniciar vazio e indica que 
+a pasta `challenges` é um aplicativo do projeto.
+
+A pasta `migrations` é responsável por gerenciar e registrar modificações no banco de dados.
+
+O `admin.py` será onde será configurado o que será exibido na tela de administração do site, ou seja,
+o usuário que é administrador do site visualizará ao acessá-lo.
+
+No `apps.py`, será para configurar e registrar os aplicativos referentes à aplicação `challenges`.
+
+O arquivo `tests.py`, serve para executar testes da aplicação.
+
+No `models.py`, é o arquivo onde será definido as informações que serão registradas no seu sistema 
+e no seu banco de dados.
+
+O `views.py` é onde será definida a lógica por trás do site, ou seja, onde você definirá as funções 
+ou classes que serão executadas quando o usuário acessar um link específico do seu site.
