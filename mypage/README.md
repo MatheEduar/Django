@@ -1,9 +1,10 @@
 # Estrutura do Projeto Django.
 
+Diretório responsável para aprendizado de conceitos iniciais do Framework Django.
+
 ## Criando Projeto Django.
 
 Após a instalação, para iniciar um projeto em Django execute o comando com essa configuração:
-
 django-admin startproject 'nome do projeto'
 
 ```
@@ -61,3 +62,23 @@ o site em um servidor, o servidor saberá como lidar com esse projeto. Utilizare
 arquivos apenas no momento de fazer o **deploy** do projeto.
 
 Além desses arquivos, também temos o `settings.py` e o `urls.py`. No arquivo `urls.py`, é onde definiremos os links, os endereços das páginas do nosso site. Já o `settings.py` é onde iremos de fato configurar o projeto. É dentro desse arquivo que definiremos as configurações e as informações essenciais para o nosso site funcionar corretamente.
+
+
+# Django Apps
+
+Cada projeto Django terá aplicativos criados dentro dele. Em outras palavras, a estrutura do Django será composta pelo projeto que você criou mais os aplicativos que deseja executar dentro dele.
+
+## Criando App no Django
+
+Para criar um App em Django execute o comando com a seguinte configuração:
+python manage.py startapp 'nome do app'
+
+```
+    python manage.py startapp challenges
+```
+
+Nesse exemplo o App challenges será um App para exemplo para esse repositório.
+
+A configuração do Projeto ficará assim:
+
+![]

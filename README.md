@@ -1,4 +1,4 @@
-# Estudos em Django:
+# Estudos em Django.
 
 ## Sobre este repositório
 Este repositório documenta minha jornada de aprendizado com o framework Django. Ele contém projetos práticos desenvolvidos durante o estudo de diversos cursos e tutoriais. Cada diretório representa um projeto específico, com código, documentação e anotações sobre o que aprendi em cada etapa.
