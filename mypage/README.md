@@ -13,7 +13,7 @@ Após a execução do comando uma pasta com a seguinte configuração será cria
 
 ![Screenshot de uma configuração da criação do comando acima.](../assets/imgs/mypage/image_mypage.png)
 
-Na pasta teremos o arquivo **manage.py**, o arquivo responsável por gerenciar o projeto Django,
+Na pasta teremos o arquivo `manage.py`, o arquivo responsável por gerenciar o projeto Django,
 e a pasta **mypage**, que é onde há os outros arquivos do projeto estão armazenados.
 
 ## Visualização do Servidor.
@@ -47,3 +47,17 @@ Adicionando o link em um navegador veremos a seguinte página:
 
 ![Screenshot do navegador acessando o endereço disponibilizado pelo terminal.](../assets/imgs/mypage/my-page-3.png)
 
+## Estrutura do Projeto Django 
+
+![Sreenshot da estrutura do projeto Django.](../assets/imgs/mypage/my-page-1.png)
+
+O projeto terá o arquivo `manage.py` e a pasta com o mesmo nome do projeto.
+
+Nessa pasta, temos o arquivo `__init__.py`, que está vazio. Este arquivo indica
+para o Python que essa pasta `mypage` faz parte de um módulo Python.
+
+Os arquivos `asgi.py` e `wsgi.py` são os arquivos de configuração que, quando colocarmos 
+o site em um servidor, o servidor saberá como lidar com esse projeto. Utilizaremos esses
+arquivos apenas no momento de fazer o **deploy** do projeto.
+
+Além desses arquivos, também temos o `settings.py` e o `urls.py`. No arquivo `urls.py`, é onde definiremos os links, os endereços das páginas do nosso site. Já o `settings.py` é onde iremos de fato configurar o projeto. É dentro desse arquivo que definiremos as configurações e as informações essenciais para o nosso site funcionar corretamente.
