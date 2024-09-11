@@ -86,7 +86,7 @@ A configuração do Projeto ficará assim:
 No arquivo `settings.py` no módulo `mypage`, é necessário declarar o aplicativo que foi criado em
 `INSTALLED_APPS`
 
-![Screenshot do INSTALLED_APPS após o passo acima.](https://github.com/MatheEduar/Django/blob/main/assets/imgs/mypage/my-page-4.png)
+![Screenshot do INSTALLED_APPS após o passo acima.](https://github.com/MatheEduar/Django/blob/main/assets/imgs/mypage/my-page-5.png)
 
 ## Arquivos do App
 
