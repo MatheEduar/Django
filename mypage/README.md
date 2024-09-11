@@ -81,4 +81,4 @@ Nesse exemplo o App challenges será um App para exemplo para esse repositório.
 
 A configuração do Projeto ficará assim:
 
-![]
+![Screenshot da configuração do projeto após o comando acima](https://github.com/MatheEduar/Django/blob/main/assets/imgs/mypage/my-page-4.png)
