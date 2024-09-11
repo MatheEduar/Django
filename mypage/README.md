@@ -1,8 +1,8 @@
-# Estrutura do Projeto Django.
+# Estrutura do Projeto Django
 
 Diretório responsável para aprendizado de conceitos iniciais do Framework Django.
 
-## Criando Projeto Django.
+## Criando Projeto Django
 
 Após a instalação, para iniciar um projeto em Django execute o comando com essa configuração:
 django-admin startproject 'nome do projeto'
@@ -17,7 +17,7 @@ Após a execução do comando uma pasta com a seguinte configuração será cria
 Na pasta teremos o arquivo `manage.py`, o arquivo responsável por gerenciar o projeto Django,
 e a pasta **mypage**, que é onde há os outros arquivos do projeto estão armazenados.
 
-## Visualização do Servidor.
+## Visualização do Servidor
 
 Após a criação do projeto, para colocar nosso site no ar devemos escrever os seguintes comandos:
 
