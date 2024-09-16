@@ -10,8 +10,11 @@ Este repositório documenta minha jornada de aprendizado com o framework Django.
 
 ## Conteúdo
 * **Projetos:**
-    * **MyPage:** Diretório responsável para aprendizado de conceitos iniciais do Framework Django.
-    * **Monthly Challenges:** Diretório responsável para aprendizado sobre URLs e Views.
+    * [**MyPage**](https://github.com/MatheEduar/Django/tree/main/mypage): Diretório responsável para aprendizado de conceitos iniciais do Framework Django.
+    * [**Monthly Challenges**](https://github.com/MatheEduar/Django/tree/main/monthly_challenges): Diretório responsável para aprendizado sobre URLs e Views.
+    * [**Monthly Challenges Template**](): Diretório responsável para aprendizado sobre Templates e
+    Static Files.
+
 * **Cursos:**
     * **Python Django - The Practical Guide** 
 * **Recursos:**
