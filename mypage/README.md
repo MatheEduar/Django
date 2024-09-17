@@ -12,7 +12,7 @@ django-admin startproject 'nome do projeto'
 ```
 Após a execução do comando uma pasta com a seguinte configuração será criada:
 
-![Screenshot de uma configuração da criação do comando acima.](https://github.com/MatheEduar/Django/blob/main/assets/imgs/mypage/my-page-0.png)
+![Screenshot de uma configuração da criação do comando acima.](https://github.com/MatheEduar/Django/blob/main/mypage/assets/imgs/img-0.png)
 
 Na pasta teremos o arquivo `manage.py`, o arquivo responsável por gerenciar o projeto Django,
 e a pasta **mypage**, que é onde há os outros arquivos do projeto estão armazenados.
@@ -37,20 +37,20 @@ e cookies, assim por diante.
 Depois de executarmos a primeira vez o nosso projeto em Django, também surgirá o banco de dados 
 **db.sqlite3** dentro da pasta dele.
 
-![Screenshot de uma configuração do projeto após o comando acima.](https://github.com/MatheEduar/Django/blob/main/assets/imgs/mypage/my-page-1.png)
+![Screenshot de uma configuração do projeto após o comando acima.](https://github.com/MatheEduar/Django/blob/main/mypage/assets/imgs/img-1.png)
 
 No terminal que você executou o código será mostrado o endereço do servidor local para que você 
 acesse o projeto:
 
-![Screenshot do terminal após comando acima.](https://github.com/MatheEduar/Django/blob/main/assets/imgs/mypage/my-page-2.png)
+![Screenshot do terminal após comando acima.](https://github.com/MatheEduar/Django/blob/main/mypage/assets/imgs/img-2.png)
 
 Adicionando o link em um navegador veremos a seguinte página:
 
-![Screenshot do navegador acessando o endereço disponibilizado pelo terminal.](https://github.com/MatheEduar/Django/blob/main/assets/imgs/mypage/my-page-3.png)
+![Screenshot do navegador acessando o endereço disponibilizado pelo terminal.](https://github.com/MatheEduar/Django/blob/main/mypage/assets/imgs/img-3.png)
 
 ## Estrutura do Projeto Django 
 
-![Sreenshot da estrutura do projeto Django.](https://github.com/MatheEduar/Django/blob/main/assets/imgs/mypage/my-page-1.png)
+![Sreenshot da estrutura do projeto Django.](https://github.com/MatheEduar/Django/blob/main/mypage/assets/imgs/img-1.png)
 
 O projeto terá o arquivo `manage.py` e a pasta com o mesmo nome do projeto.
 
@@ -81,12 +81,12 @@ Nesse exemplo o App challenges será um App para exemplo para esse repositório.
 
 A configuração do Projeto ficará assim:
 
-![Screenshot da configuração do projeto após o comando acima](https://github.com/MatheEduar/Django/blob/main/assets/imgs/mypage/my-page-4.png)
+![Screenshot da configuração do projeto após o comando acima](https://github.com/MatheEduar/Django/blob/main/mypage/assets/imgs/img-4.png)
 
 No arquivo `settings.py` no módulo `mypage`, é necessário declarar o aplicativo que foi criado em
 `INSTALLED_APPS`
 
-![Screenshot do INSTALLED_APPS após o passo acima.](https://github.com/MatheEduar/Django/blob/main/assets/imgs/mypage/my-page-5.png)
+![Screenshot do INSTALLED_APPS após o passo acima.](https://github.com/MatheEduar/Django/blob/main/mypage/assets/imgs/img-5.png)
 
 ## Arquivos do App
 

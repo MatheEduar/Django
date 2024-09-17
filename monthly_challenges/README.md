@@ -23,7 +23,7 @@ Uma vez que o Django encontre um padrão de URL correspondente, ele chama a fun�
 
 Modifique o arquivo `views.py` para:
 
-![Screenshot do views.py modificado](https://github.com/MatheEduar/Django/blob/main/assets/imgs/monthly_challenges/monthly_challenges-0.png)
+![Screenshot do views.py modificado](https://github.com/MatheEduar/Django/blob/main/monthly_challenges/assets/imgs/img-0.png)
 
 Crie um novo arquivo chamado `urls.py` no app challenges
 
@@ -31,7 +31,7 @@ Crie um novo arquivo chamado `urls.py` no app challenges
 
 E modifique-o para ficar assim:
 
-![Screenshot do views.py modificado](https://github.com/MatheEduar/Django/blob/main/assets/imgs/monthly_challenges/monthly_challenges-1.png)
+![Screenshot do views.py modificado](https://github.com/MatheEduar/Django/blob/main/monthly_challenges/assets/imgs/img-1.png)
 
 `from django.urls import path`
 
@@ -55,7 +55,7 @@ o Django saber como lidar com as diferentes URLs do site.
     para a seção "janeiro" do site.
 
 Modifique o arquivo `urls.py` no diretório `monthly_challenges` para que fique assim:
-![Screenshot do arquivo monthly_challenges/urls.py modificado](https://github.com/MatheEduar/Django/blob/main/assets/imgs/monthly_challenges/monthly_challenges-2.png)
+![Screenshot do arquivo monthly_challenges/urls.py modificado](https://github.com/MatheEduar/Django/blob/main/monthly_challenges/assets/imgs/img-2.png)
 
 `from django.urls import path, *include*`
 
@@ -70,19 +70,19 @@ Modifique o arquivo `urls.py` no diretório `monthly_challenges` para que fique 
 
 ### Pesquisando a url `localhost:8000/challenges/january` no nosso navegador teremos:
 
-![Screenshot do navegado com o link acima](https://github.com/MatheEduar/Django/blob/main/assets/imgs/monthly_challenges/monthly_challenges-3.png)
+![Screenshot do navegado com o link acima](https://github.com/MatheEduar/Django/blob/main/monthly_challenges/assets/imgs/img-3.png)
 
 
 ## Aprimorando o Site
 
 ### Modifique o arquivo `views.py` para:
 
-![Screenshot do arquivo modificado](https://github.com/MatheEduar/Django/blob/main/assets/imgs/monthly_challenges/monthly_challenges-4.png)
+![Screenshot do arquivo modificado](https://github.com/MatheEduar/Django/blob/main/monthly_challenges/assets/imgs/img-4.png)
 
 
 ### Modifique o arquivo ´urls.py´ do módulo ´challenges´
 
-![Screenshot do arquivo modificado](https://github.com/MatheEduar/Django/blob/main/assets/imgs/monthly_challenges/monthly_challenges-5.png)
+![Screenshot do arquivo modificado](https://github.com/MatheEduar/Django/blob/main/monthly_challenges/assets/imgs/img-5.png)
 
 * `HttpResponseNotFound` é o tipo de resposta que permite o Django enviar um erro 404 Not Found.
 * `def monthly_challenge(request, month)` o parâmetro month deve ser igual ao argumento que estará 
@@ -92,7 +92,7 @@ entre `<>` no arquivo `urls.py` para que possa ser trabalhada como variável na 
 
 ### Modifique o arquivo ´urls.py´
 
-![Screnshot do arquivo urls modificado](https://github.com/MatheEduar/Django/blob/main/assets/imgs/monthly_challenges/monthly_challenges-6.png)
+![Screnshot do arquivo urls modificado](https://github.com/MatheEduar/Django/blob/main/monthly_challenges/assets/imgs/img-6.png)
 
 * A alteração permite que as funções no `views.py` possam ser acessadas de duas formas diferentes com
 o mesmo nome da variável, mas com tipos diferentes.
@@ -101,7 +101,7 @@ o mesmo nome da variável, mas com tipos diferentes.
 
 Adicione a função `HttpResponseRedirect` do módulo `django.http`
 
-![Screenshot do arquivo `views.py modificado`](https://github.com/MatheEduar/Django/blob/main/assets/imgs/monthly_challenges/monthly_challenges-7.png)
+![Screenshot do arquivo `views.py modificado`](https://github.com/MatheEduar/Django/blob/main/monthly_challenges/assets/imgs/img-7.png)
 
 * A função `monthly_challenge_by_number` é responsável por:
     1. Pegar todas as chaves do dicionário `monthly_challenges` e converter para uma lista.
@@ -122,7 +122,7 @@ não existiria.
 
 Modifique o arquivo `urls.py`
 
-![Screenshot do arquivo `/challenges/urls.py` modificado](https://github.com/MatheEduar/Django/blob/main/assets/imgs/monthly_challenges/monthly_challenges-8.png)
+![Screenshot do arquivo `/challenges/urls.py` modificado](https://github.com/MatheEduar/Django/blob/main/monthly_challenges/assets/imgs/img-8.png)
 
 * A variável `name` poderá ser utilizada para construir caminhos para apontar para a URL
 
@@ -132,7 +132,7 @@ Adicione o trecho de código no arquivo `views.py`:
 
 Em seguida modifique a função de redirecionamento para: 
 
-![Screenshot do arquivo modificado](https://github.com/MatheEduar/Django/blob/main/assets/imgs/monthly_challenges/monthly_challenges-9.png)
+![Screenshot do arquivo modificado](https://github.com/MatheEduar/Django/blob/main/monthly_challenges/assets/imgs/img-9.png)
 
 ## Completando o Site
 
@@ -140,13 +140,13 @@ Em seguida modifique a função de redirecionamento para:
 
 Adicione um path ao arquivo `urls.py`
 
-![Screenshot do arquivo urls.py finalizado](https://github.com/MatheEduar/Django/blob/main/assets/imgs/monthly_challenges/monthly_challenges-10.png)
+![Screenshot do arquivo urls.py finalizado](https://github.com/MatheEduar/Django/blob/main/monthly_challenges/assets/imgs/img-10.png)
 
 Adicione uma view ao arquivo `views.py`
 
-![Screenshot do arquivo views.py finalizado](https://github.com/MatheEduar/Django/blob/main/assets/imgs/monthly_challenges/monthly_challenges-11.png)
+![Screenshot do arquivo views.py finalizado](https://github.com/MatheEduar/Django/blob/main/monthly_challenges/assets/imgs/img-11.png)
 
 * O código cria uma lista html com links para os meses no calendário do dicionário do código e envia
 como resposta final para o usuário.
 
-![Screenshot do index do site](https://github.com/MatheEduar/Django/blob/main/assets/imgs/monthly_challenges/monthly_challenges-12.png)
+![Screenshot do index do site](https://github.com/MatheEduar/Django/blob/main/monthly_challenges/assets/imgs/img-12.png)

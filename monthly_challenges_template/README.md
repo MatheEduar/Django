@@ -9,7 +9,7 @@ no framework Django. O código inicial é o mesmo da versão final de `monthly c
     * Em seguida crie uma pasta `challenges` na pasta `templates`
         * Crie o arquivo `challenge.html` na pasta `challenges`
 
-![Screenshot da configuração das pastas acima](https://github.com/MatheEduar/Django/blob/main/assets/imgs/monthly_challenges_template/img-0.png)
+![Screenshot da configuração das pastas acima](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-0.png)
 
 ### Enviado um html por HttpResponse
 
