@@ -15,20 +15,12 @@ monthly_challenges = {
     "september": "Desafio: Organizar um espaço da sua casa que esteja bagunçado.",
     "october": "Desafio: Escrever três coisas pelas quais você é grato todos os dias.>",
     "november": "Desafio: Fazer um trabalho voluntário ou doar para uma causa que você acredita.",
-    "december": "Desafio: Revisitar seu mural de sonhos e metas e avaliar o que você conquistou.",
+    "december": None #"Desafio: Revisitar seu mural de sonhos e metas e avaliar o que você conquistou.",
 }
 
 def index(request):
-    list_items = ""
     months = list(monthly_challenges.keys())
-    
-    for month in months:
-        capitalize_month = month.capitalize()
-        month_path = reverse("month-challenge", args=[month])
-        list_items += f"<li><a href=\"{month_path}\">{capitalize_month}</a></li>"
-        response_data = f"<ul>{list_items}</ul>"
-    
-    return HttpResponse(response_data)
+    return render(request, "challenges/index.html", {"months": months})
 
 
 def monthly_challenge_by_number(request, month):
@@ -42,8 +34,11 @@ def monthly_challenge_by_number(request, month):
 def monthly_challenge(request, month):
     try:
         text_challenge = monthly_challenges[month] 
-        response_data = f"<h1>{text_challenge}</h1>"
-        return HttpResponse(response_data)
+        return render(request, "challenges/challenge.html", 
+            {
+                "text": text_challenge,
+                "month": month
+            })
     except:
         return HttpResponse("Esse mês não existe!")
 

@@ -9,9 +9,115 @@ no framework Django. O código inicial é o mesmo da versão final de `monthly c
     * Em seguida crie uma pasta `challenges` na pasta `templates`
         * Crie o arquivo `challenge.html` na pasta `challenges`
 
-![Screenshot da configuração das pastas acima](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-0.png)
 
-### Enviado um html por HttpResponse
+## Enviado um html por HttpResponse
 
-    * Django utiliza um método para ler um arquivo e transformá-lo em texto
+* Django utiliza um método para ler um arquivo e transformá-lo em texto
+    `from django.template.loader import render_to_string`
+
+* Modifique a view do `views.py` para:
+
+![Screenshot da função `monthly_challenge` modificada]()
+
+* Para que a função funcione da maneira devida será necessário configurar o arquivo 
+`settings.py`
+
+![Screenshot do arquivo `settings.py` modificado]()
+
+* Ou apenas adicionar o `challenges` na lista de `INSTALLED_APPS`, com a configuração
+`APP_DIRS` atribuida para `True`
+
+## Função Render
+
+* A função `render` é um atalho para as duas funções responsáveis para enviar a renderização
+do arquivo html e enviar a resposta Http, o mesmo código pode ser escrito assim: 
+
+![Screenshot da função render implementada]()
+
+## Django Template Language (DTL) 
+
+A sintaxe DTL é utilizada junto com html para poder renderizar as páginas dinamicamente. 
+
+As views irão enviar um dicionário com o variáveis que devem ser acessadas pelo html e seus pares com o conteúdo.
+
+![Screenshot do dicionário colocado para renderização]()
+
+Para a página ser renderizada com a variável é necessário utilizar a seguinte sintaxe:
+
+![Screenshot do html modificado]()
+
+### Filtros 
+
+* Os filtros são ferramentas poderosas que permitem manipular e formatar dados diretamente nos seus templates HTML. Eles atuam como pequenas funções que recebem um valor e retornam um novo valor modificado, oferecendo flexibilidade para personalizar a exibição de seus dados.
+
+
+Na versão final `month.capitalize()` é retirado do envio e o filtro `|title` é aplicado ao mês no arquivo html.
+
+### Tags
+
+* As tags são pequenas porções de lógica reutilizável que você insere diretamente em seus templates HTML. Elas permitem que você manipule dados, faça condicionais, inclua outros templates e muito mais, tudo dentro do contexto de sua página. Isso torna seus templates mais dinâmicos e fáceis de manter.
+
+
+#### For tag
+
+* Modificando a view `index`
+
+![Screenshot da view index modificada]()
+
+* Criando o `index.html`
+
+![Screenshot do index.html com a tag for]()
+
+* Podemos ver um exemplo da tag for sendo utilizada, essa é a sintaxe utilizada para aplicar a
+lógica no front-end da aplicação.
+
+Na versão final a view apenas envia uma lista de meses e o front-end lida com os dados.
+
+#### Url tag
+
+A url tag é um método para utilizar a função `reverse()` no front-end para que não haja problemas voltados a caminhos na aplicação.
+
+![Screenshot da tag url sendo utilizada]()
+
+#### If tag
+
+* A tag `if` é uma ferramenta fundamental para controlar o fluxo dos templates, permitindo que a página exiba ou oculte partes do HTML com base em condições específicas.
+
+![Screenshot mostrando a tag if sendo utilizada]()
+
+### Herança de Templates
+
+Em Django, a herança de templates é um mecanismo poderoso que permite criar uma estrutura base para seus templates e, em seguida, estender essa estrutura em templates mais específicos. É como criar um modelo para suas páginas, onde você define os elementos comuns a todas elas e depois personaliza cada página individualmente.
+
+* Crie uma pasta `templates` na raiz do projeto, utilizaremos para deixar o html base que será utilizade em todo projeto.
+
+* Crie o arquivo `base.html`, ele será utilizado como uma base html de todo o projeto
+
+![Screenshot do arquivo base.html]()
+
+Esse arquivo será utilizado para criar a estrutura html das páginas, utilizando o bloco de título da página e o bloco de conteúdo para deixar os arquivos hmtls mais visíveis.
+
+* Adicione o caminho para o diretório template no `settings.py`. A modificação é necessária para que a tag `extends` nos códigos seguintes consigam acessar o arquivo `base.html`.
+
+![Screenshot da modificação em settings.py]()
+
+
+* Em seguida modifique os arquivos `index.html` e  `challenge.html` para que eles tenham a configuração base do projeto.
+
+
+#### index.html
+
+![Screenshot do arquivo index.html modificado]()
+
+#### challenge.html
+
+![Screenshot do arquivo challenge.html modificado]()
+
+### Partials e Snippets
+
+Partials e snippets são recursos que permitem reutilizar fragmentos de código HTML dentro de seus templates Django. Isso ajuda a manter seus templates organizados, mais legíveis e mais fáceis de manter.
+
+
+
+
 
