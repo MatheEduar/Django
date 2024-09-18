@@ -17,12 +17,12 @@ no framework Django. O código inicial é o mesmo da versão final de `monthly c
 
 * Modifique a view do `views.py` para:
 
-![Screenshot da função `monthly_challenge` modificada]()
+![Screenshot da função `monthly_challenge` modificada](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-0.png)
 
 * Para que a função funcione da maneira devida será necessário configurar o arquivo 
 `settings.py`
 
-![Screenshot do arquivo `settings.py` modificado]()
+![Screenshot do arquivo `settings.py` modificado](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-1.png)
 
 * Ou apenas adicionar o `challenges` na lista de `INSTALLED_APPS`, com a configuração
 `APP_DIRS` atribuida para `True`
@@ -32,7 +32,7 @@ no framework Django. O código inicial é o mesmo da versão final de `monthly c
 * A função `render` é um atalho para as duas funções responsáveis para enviar a renderização
 do arquivo html e enviar a resposta Http, o mesmo código pode ser escrito assim: 
 
-![Screenshot da função render implementada]()
+![Screenshot da função render implementada](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-2.png)
 
 ## Django Template Language (DTL) 
 
@@ -40,11 +40,11 @@ A sintaxe DTL é utilizada junto com html para poder renderizar as páginas dina
 
 As views irão enviar um dicionário com o variáveis que devem ser acessadas pelo html e seus pares com o conteúdo.
 
-![Screenshot do dicionário colocado para renderização]()
+![Screenshot do dicionário colocado para renderização](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-3.png)
 
 Para a página ser renderizada com a variável é necessário utilizar a seguinte sintaxe:
 
-![Screenshot do html modificado]()
+![Screenshot do html modificado](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-4.png)
 
 ### Filtros 
 
@@ -62,11 +62,11 @@ Na versão final `month.capitalize()` é retirado do envio e o filtro `|title` �
 
 * Modificando a view `index`
 
-![Screenshot da view index modificada]()
+![Screenshot da view index modificada](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-5.png)
 
 * Criando o `index.html`
 
-![Screenshot do index.html com a tag for]()
+![Screenshot do index.html com a tag for](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-6.png)
 
 * Podemos ver um exemplo da tag for sendo utilizada, essa é a sintaxe utilizada para aplicar a
 lógica no front-end da aplicação.
@@ -77,13 +77,13 @@ Na versão final a view apenas envia uma lista de meses e o front-end lida com o
 
 A url tag é um método para utilizar a função `reverse()` no front-end para que não haja problemas voltados a caminhos na aplicação.
 
-![Screenshot da tag url sendo utilizada]()
+![Screenshot da tag url sendo utilizada](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-7.png)
 
 #### If tag
 
 * A tag `if` é uma ferramenta fundamental para controlar o fluxo dos templates, permitindo que a página exiba ou oculte partes do HTML com base em condições específicas.
 
-![Screenshot mostrando a tag if sendo utilizada]()
+![Screenshot mostrando a tag if sendo utilizada](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-8.png)
 
 ### Herança de Templates
 
@@ -93,13 +93,13 @@ Em Django, a herança de templates é um mecanismo poderoso que permite criar um
 
 * Crie o arquivo `base.html`, ele será utilizado como uma base html de todo o projeto
 
-![Screenshot do arquivo base.html]()
+![Screenshot do arquivo base.html](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-9.png)
 
 Esse arquivo será utilizado para criar a estrutura html das páginas, utilizando o bloco de título da página e o bloco de conteúdo para deixar os arquivos hmtls mais visíveis.
 
 * Adicione o caminho para o diretório template no `settings.py`. A modificação é necessária para que a tag `extends` nos códigos seguintes consigam acessar o arquivo `base.html`.
 
-![Screenshot da modificação em settings.py]()
+![Screenshot da modificação em settings.py](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-11.png)
 
 
 * Em seguida modifique os arquivos `index.html` e  `challenge.html` para que eles tenham a configuração base do projeto.
@@ -107,11 +107,11 @@ Esse arquivo será utilizado para criar a estrutura html das páginas, utilizand
 
 #### index.html
 
-![Screenshot do arquivo index.html modificado]()
+![Screenshot do arquivo index.html modificado](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-11.png)
 
 #### challenge.html
 
-![Screenshot do arquivo challenge.html modificado]()
+![Screenshot do arquivo challenge.html modificado](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-12.png)
 
 ### Partials e Snippets
 
