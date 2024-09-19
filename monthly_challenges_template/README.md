@@ -117,7 +117,42 @@ Esse arquivo será utilizado para criar a estrutura html das páginas, utilizand
 
 Partials e snippets são recursos que permitem reutilizar fragmentos de código HTML dentro de seus templates Django. Isso ajuda a manter seus templates organizados, mais legíveis e mais fáceis de manter.
 
+* Crie uma pasta chamada partials, ela será responsável por guardar todos os snippets das páginas
+relacionadas a aplicação Challenges.
 
+* Crie um arquivo `header.html` e escreva o que deve ser colocado como header nas páginas.
 
+* Utilizando a tag include do django, você poderá incluir o trecho do código em qualquer local utilizando o caminho do arquivo.
 
+#### Exemplo:
 
+    `{% include "challenges/partials/header.html" %}`
+
+## Static Files
+
+Em um projeto Django, arquivos estáticos são aqueles que não mudam dinamicamente, como imagens, folhas de estilo (CSS) e scripts JavaScript. Eles são servidos diretamente para o navegador do usuário, sem a necessidade de processamento pelo servidor Django.
+
+* Para isso, crie uma pasta chamada `static` na aplicação challenges, e para melhorar o uso no projeto, crie outra pasta na pasta `static` chamada challenges
+
+* Adicione os arquivos temporários que precisar, como exemplo utilizaremos o `index.css`
+
+* Adicione um novo bloco no arquivo `base.html`
+
+![Screenshot do arquivo base.html modficado](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-13.png)
+
+* Adicione a tag `{% load static %}` no arquivo `challenge.html` e adicione como conteúdo no arquivo `index.html` nosso caminho para o arquivo `index.css` no bloco criado acima.
+
+![Screenshot do arquivo index.html modificado](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-14.png)
+
+### Arquivos Estáticos Globais
+
+* Adicione uma nova configuração ao arquivo `Settings.py`:
+
+![Screenshot da nova regra adicionada](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-15.png)
+
+* Crie um novo diretório chamado `static` no diretório raiz do projeto e adicione a estilização
+geral.
+
+* Adicione o estilo no arquivo `base.html`
+
+![Screenshot do arquivo base.html modificado](https://github.com/MatheEduar/Django/blob/main/monthly_challenges_template/assets/imgs/img-16.png)

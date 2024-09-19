@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: "Lato", sans-serif;
+}
+
+body {
+    background-color: #666;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background-image: linear-gradient(to right, #444, #000);
+}
+
+header nav a:link,
+header nav a:visited {
+    display: inline-block;
+    font-size: 3rem;
+    text-decoration: none;
+    color: #fff;
+    background-color: #222;
+    border-radius: 3rem;
+    padding: 1rem 4rem;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.3);
+    transition: all 0.2s;
+}
+
+header nav a:hover {
+    box-shadow: 0 5px 16px rgba(255, 255, 255, 0.3);
+    transform: translateY(-0.5rem);
+}
+
+header nav a:active {
+    box-shadow: 0 5px 10px rgba(255, 255, 255, 0.3);
+    transform: translateY(1px);
+}
+
+ul {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+ul li a:link,
+ul li a:visited {
+    display: inline-block;
+    width: 10rem;
+    padding: 0.5rem 1rem;
+    background-color: #888;
+    
+    border-radius: 30px;
+    
+    color: white;
+    text-decoration: none;
+    box-shadow: 0 2px 8px rgba(255, 255, 255, 0.4);
+    
+    transition: all .2s;
+}
+
+ul li a:hover {
+    background-color: #a1a1a1;
+    transform: translateY(-0.5rem);
+    box-shadow: 0 4px 16px rgba(255, 255, 255, 0.4);
+}
+
+ul li a:active{
+    transform: translateY(1px);
+    box-shadow: 0 8px 36px rgba(255, 255, 255, 0.4);
+}
+
+.challenge-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4rem;
+    gap: 2rem;
+    h1 {
+        font-size: 3rem;
+        color: #fff;
+        filter: drop-shadow(0 0 0.75rem rgba(0,0,0,1));
+    }
+    h2 {
+        font-size: 1.5rem;
+        color: #fff;
+        filter: drop-shadow(0 0 0.75rem rgba(0,0,0,1));
+    }
+}

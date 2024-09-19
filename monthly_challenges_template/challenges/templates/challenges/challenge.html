@@ -1,14 +1,25 @@
 {% extends "base.html" %}
 
+{% comment %} * Título da Página {% endcomment %}
 {% block page_title %}
     {{ month|title }} Challenge
 {% endblock  %}
 
 {% block content %}
-    <h1>{{ month|title }}'s' Challege</h1>
-    {% if text is not None%}
-        <h2>{{ text }}</h2>
-    {% else %}
-        <h2>There is no challenge for this month yet!</h2>
-    {% endif %}
+
+    {% comment %} * Header {% endcomment %}
+    {% include "challenges/partials/header.html" %}
+
+    {% comment %} * Título da página {% endcomment %}
+    <div class="challenge-box">
+        <h1>{{ month|title }}'s Challege</h1>
+
+        {% comment %} * Renderização do Desafio {% endcomment %}
+        {% if text is not None%}
+            <h2>{{ text }}</h2>
+        {% else %}
+            <h2>There is no challenge for this month yet!</h2>
+        {% endif %}
+    </div>
+
 {% endblock  %}

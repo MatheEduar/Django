@@ -40,5 +40,6 @@ def monthly_challenge(request, month):
                 "month": month
             })
     except:
-        return HttpResponse("Esse mês não existe!")
+        response_data = render_to_string("404_error.html")
+        return HttpResponse(response_data)
 
