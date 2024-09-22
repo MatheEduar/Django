@@ -14,6 +14,7 @@ Este repositório documenta minha jornada de aprendizado com o framework Django.
     * [**Monthly Challenges**](https://github.com/MatheEduar/Django/tree/main/monthly_challenges): Diretório responsável para aprendizado sobre URLs e Views.
     * [**Monthly Challenges Template**](): Diretório responsável para aprendizado sobre Templates e
     Static Files.
+    * [**MySite**](): Um pequeno projeto para crição de um blog, sem utilizar Banco de Dados.
 
 * **Cursos:**
     * **Python Django - The Practical Guide** 
