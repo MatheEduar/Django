@@ -1,0 +1,59 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block styles_css %}
+    <link rel="stylesheet" type="text/css" href={% static "blog/css/index.css" %}>
+{% endblock styles_css %}
+
+
+{% block page_title %}
+    My Blog
+{% endblock page_title %}
+
+{% block content %}
+        <header class="header" id="main-navigation"> 
+            <h1><a>M's</a></h1>
+            <nav>
+                <a href="{% url "posts" %}">All posts</a>
+            </nav>
+        </header>
+
+        <section id="welcome"> 
+            <header class="header">
+                <div class="header__box-text">
+                    <h2>Matheus's Blog</h2>
+                    <p>Blog destinado a postar sobre meus últimos aprendizados em programação.</p>
+                </div>
+                <div class="header__box-img">
+                    <img class="header__box-img--Matheus" src="https://avatars.githubusercontent.com/u/101458586?s=400&u=b201ce7e6ac73485e05ba70b8d2d87b1f423abc3&v=4" alt="Criador do Blog"/>
+                </div>
+            </header>
+        </section >
+
+        <section id="latests-posts">
+            <h2>Meus Aprendizados</h2>      
+            <ul>
+                <li>
+                    <article class="post">
+                        <a href="">
+                            <img src="" alt="Aprendendo Django" />
+                            <div class="post__content">
+                                <h3> Aprendendo Django </h3>
+                                <p>
+                                    Comecei a estudar o Framework Django para poder trabalhar em um estágio voluntário.
+                                </p>
+                            </div>
+                        </a>
+
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+
+        <section id="about">
+            <h2>O que eu faço</h2>
+            <p>Adoro estudar tecnologias de diversas áreas, atualmente estou focando em desenvolvimento WEB e Mobile</p>
+        </section>
+
+{% endblock content %}

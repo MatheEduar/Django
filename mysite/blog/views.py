@@ -7,18 +7,20 @@ lista_de_posts = {
     "Hiago": "Olá, eu não estou estudando!"
 }
 
+def starting_page(request):
+    return render(request, "blog/index.html", {})
 
 def posts(request):
-    return render(request, "posts.html", {})
+    return render(request, "blog/posts.html", {})
 
-def post(request, slug):
+def post_detail(request, slug):
     nome = slug
     autores = list(lista_de_posts.keys())
     if nome in autores:
         frase = lista_de_posts[nome]
-        return render(request, "post.html", { "nome": nome, "frase": frase })
+        return render(request, "blog/post.html", { "nome": nome, "frase": frase })
     else: 
-        return render(request, "post.html", {"nome": "404", "frase": "Esse autor não existe!"})
+        return render(request, "blog/post.html", {"nome": "404", "frase": "Esse autor não existe!"})
         
     
     
