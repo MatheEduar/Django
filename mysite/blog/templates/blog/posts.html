@@ -4,12 +4,13 @@
 {% block page_title %} Todos os posts {% endblock page_title %}
 
 {% block styles_css %}
-    <link rel="stylesheet" type="text/css" href={% static "blog/css/index.css" %}>
+    <link rel="stylesheet" type="text/css" href={% static "blog/css/all-posts.css" %}>
 {% endblock styles_css %}
 
 {% block content %}
+    <h2>Todos os posts</h2>
 
-    <ul>
+    <ul class="all-posts-list">
         {% include "blog/partials/post.html" %}    
         {% include "blog/partials/post.html" %}    
         {% include "blog/partials/post.html" %}    
