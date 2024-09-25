@@ -11,13 +11,6 @@
 {% endblock page_title %}
 
 {% block content %}
-        <header class="header" id="main-navigation"> 
-            <h1><a>M's</a></h1>
-            <nav>
-                <a href="{% url "posts" %}">All posts</a>
-            </nav>
-        </header>
-
         <section id="welcome"> 
             <header class="header">
                 <div class="header__box-text">
@@ -33,54 +26,9 @@
         <section id="latests-posts">
             <h2>Meus Aprendizados</h2>      
             <ul>
-                <li>
-                    <article class="post">
-                        <a href="" class="post-link">
-                            <div class="post-link__img-box">
-                                <img src={% static "blog/img/django.jpg" %} alt="Aprendendo Django" />
-                            </div>
-                            <div class="post__content">
-                                <h3> Aprendendo Django </h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet. Eum incidunt nisi quo alias corrupti At quaerat consequuntur aut natus consequatur et totam blanditiis quo corrupti laborum.
-                                </p>
-                            </div>
-                        </a>
-
-                    </article>
-                </li>
-                <li>
-                    <article class="post">
-                        <a href="" class="post-link">
-                            <div class="post-link__img-box">
-                                <img src={% static "blog/img/react-native.png" %} alt="Aprendendo Django" />
-                            </div>
-                            <div class="post__content">
-                                <h3> Aprendendo React Native </h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet. Eum incidunt nisi quo alias corrupti At quaerat consequuntur aut natus consequatur et totam blanditiis quo corrupti laborum.
-                                </p>
-                            </div>
-                        </a>
-
-                    </article>
-                </li>
-                <li>
-                    <article class="post">
-                        <a href="" class="post-link">
-                            <div class="post-link__img-box">
-                                <img src={% static "blog/img/sass.png" %} alt="Aprendendo Sass" />
-                            </div>
-                            <div class="post__content">
-                                <h3> Aprendendo Sass </h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet. Eum incidunt nisi quo alias corrupti At quaerat consequuntur aut natus consequatur et totam blanditiis quo corrupti laborum.
-                                </p>
-                            </div>
-                        </a>
-
-                    </article>
-                </li>
+                {% include "blog/partials/post.html" %}
+                {% include "blog/partials/post.html" %}
+                {% include "blog/partials/post.html" %}
             </ul>
         </section>
 
