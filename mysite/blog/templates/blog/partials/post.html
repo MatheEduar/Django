@@ -1,8 +1,8 @@
-{%load static%}
+{%load static %}
 
 <li>
     <article class="post">
-        <a href="" class="post-link">
+        <a href={% url "post-detail" "Django" %} class="post-link">
             <div class="post-link__img-box">
                 <img src={% static "blog/img/django.jpg" %} alt="Aprendendo Django" />
             </div>

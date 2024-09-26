@@ -22,8 +22,8 @@ body {
     box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.1);
 }
 
-#main-navigation nav a:link,
-#main-navigation nav a:visited{
+#main-navigation a:link,
+#main-navigation a:visited{
     text-decoration: none;
     font-size: 1.6rem;
     color: white;

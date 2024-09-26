@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_title %}
+    {{ nome }}
+{% endblock page_title %}
+
+{% block styles_css %}
+    <link rel="stylesheet" href={% static 'blog/css/post-detail.css' %} />
+{%endblock%}
+
+{% block content %}
+    <section id="summary"> 
+        <div class="img-box">
+            <img src={% static 'blog/img/django.jpg' %} alt="post title"/>
+        </div>
+        <div class="text-box">
+            <h2> {{ post_title }} </h2 >
+            <address>Matheus Eduardo</address>
+            <div>
+                Last time updated on <time> 26/09/2024 </time>
+            </div>
+        </div>
+    </section>
+
+    <main id="main">
+        {% lorem 9 p random %}
+    </main>
+    
+{% endblock content %}

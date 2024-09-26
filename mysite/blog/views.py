@@ -2,9 +2,9 @@ from django.shortcuts import render
 
 # Create your views here.
 lista_de_posts = {
-    "Matheus": "Olá, eu estou estudando para ser um programador web!",
-    "Emanuel": "Olá, eu estou estudando para ser um desenvolvedor de jogos!",
-    "Hiago": "Olá, eu não estou estudando!"
+    "Django": {"img": '/blog/img/django.jpg', "frase": 'Aprendizado em Django'},
+    "React-Native": {"img": '', "frase": ''},
+    "Sass": {"img": '', "frase": ''}
 }
 
 def starting_page(request):
@@ -14,13 +14,16 @@ def posts(request):
     return render(request, "blog/posts.html", {})
 
 def post_detail(request, slug):
-    nome = slug
+    post = slug
     autores = list(lista_de_posts.keys())
-    if nome in autores:
-        frase = lista_de_posts[nome]
-        return render(request, "blog/post.html", { "nome": nome, "frase": frase })
+    if post in autores:
+        post_info = lista_de_posts[post]
+        dict_post_info = dict(post_info)
+        frase = dict_post_info["frase"]
+        
+        return render(request, "blog/post-detail.html", { "nome": post, "post_title": post})
     else: 
-        return render(request, "blog/post.html", {"nome": "404", "frase": "Esse autor não existe!"})
+        return render(request, "blog/post-detail.html", {"nome": "404", "frase": "Esse autor não existe!"})
         
     
     
