@@ -9,11 +9,11 @@
 
 {% block content %}
     <h2>Todos os posts</h2>
-
-    <ul class="all-posts-list">
-        {% include "blog/partials/post.html" %}    
-        {% include "blog/partials/post.html" %}    
-        {% include "blog/partials/post.html" %}    
-        {% include "blog/partials/post.html" %}    
-    </ul>
+    
+        <ul class="all-posts-list">
+            {% for post in all_posts %}
+            {% include "blog/partials/post.html" %}       
+            {% endfor %}
+        </ul>
+    
 {% endblock content %}

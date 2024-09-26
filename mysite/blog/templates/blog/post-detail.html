@@ -2,7 +2,7 @@
 {% load static %}
 
 {% block page_title %}
-    {{ nome }}
+    {{ post.title }}
 {% endblock page_title %}
 
 {% block styles_css %}
@@ -12,13 +12,13 @@
 {% block content %}
     <section id="summary"> 
         <div class="img-box">
-            <img src={% static 'blog/img/django.jpg' %} alt="post title"/>
+            <img src="{% static 'blog/img/'|add:post.image %}" alt={{ post.title }}/>
         </div>
         <div class="text-box">
-            <h2> {{ post_title }} </h2 >
-            <address>Matheus Eduardo</address>
+            <h2> {{ post.title }} </h2 >
+            <address>{{ post.author }}</address>
             <div>
-                Last time updated on <time> 26/09/2024 </time>
+                Last time updated on <time> {{ post.date|date:"d M Y" }} </time>
             </div>
         </div>
     </section>

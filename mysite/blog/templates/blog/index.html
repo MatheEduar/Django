@@ -26,9 +26,9 @@
         <section id="latests-posts">
             <h2>Meus Aprendizados</h2>      
             <ul>
-                {% include "blog/partials/post.html" %}
-                {% include "blog/partials/post.html" %}
-                {% include "blog/partials/post.html" %}
+                {% for post in posts %}
+                    {% include "blog/partials/post.html" %}
+                {% endfor %}
             </ul>
         </section>
 
