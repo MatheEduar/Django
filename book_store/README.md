@@ -30,3 +30,5 @@ Será criado um arquivo dentro da pasta migrations dos aplicativos utilizados pe
 Para efetivar a migração devemos rodar o seguinte comando:
 
     `python manage.py migrate`
+
+## Aplicando Consultas
